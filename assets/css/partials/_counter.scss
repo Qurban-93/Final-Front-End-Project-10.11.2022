@@ -1,0 +1,90 @@
+#counter{
+
+        margin-top: 100px;
+        min-height: 315px;
+        overflow: hidden;
+        position: relative;
+        background-image: url(http://demo.tempload.com/jirono/assets/images/photos/parallax.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+
+
+        @media(min-width:375px) and (max-width:992px){
+            height: 550px;
+        }
+
+        @media(max-width:767px){
+            height: 1100px;
+        }
+    
+        &::before{
+            content: '';
+            position: absolute;
+            width: 140%;
+            height: 140%;
+            opacity: 0.8;
+            background: #585CE9;
+        }
+    
+        .parallax-content{
+            position: absolute;
+            z-index: 3;
+            top: 50%;
+            transform: perspective(1px) translateY(-50%);
+            width: 100%;
+    
+            .parallax{
+
+                .box{
+                    position: relative;
+                    transition: all .3s;
+    
+                    &:hover{
+                        transform: translate(0, -10px);
+                    }
+                }
+    
+                .counter-item{
+                    height: 280px;
+                    position: relative;
+                    overflow: hidden;
+    
+                    strong{
+                        display: block;
+                        text-align: center;
+                        font-weight: 400;
+                        font-size: 40px;
+                        letter-spacing: 1.72px;
+                        margin-bottom: 15px;
+                        color: #fff;
+                        margin-top: 70px;
+                        transition: all 0.3s ease 0s;
+                        position: relative;
+    
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            left: 0px;
+                            right: 0px;
+                            top: 65px;
+                            margin: auto;
+                            width: 115px;
+                            border-top: 1px dashed #fff;
+                        }
+                    }
+    
+                    span{
+                        display: block;
+                        text-align: center;
+                        color: #fff;
+                        font-size: 20px;
+                        letter-spacing: 0.86px;
+                        
+                    }
+                }
+            }
+        }
+    
+    
+}

@@ -1,0 +1,238 @@
+#pricing-plans{
+
+    padding: 120px 0;
+
+    .text-heading {
+        text-align: center;
+
+        h2{
+            font-weight: 400;
+            font-size: 28px;
+            color: #3B566E;
+            letter-spacing: 1.75px;
+            line-height: 38px;
+            margin-bottom: 20px;
+        }
+
+        p{
+            text-align: center;
+            color: #6F8BA4;
+            line-height: 28px;
+            letter-spacing: 1px;
+            margin-bottom: 50px;
+        }
+    }
+
+    .pricing-item {
+        background: #FFFFFF;
+        box-shadow: 0 2px 48px 0 rgb(0 0 0 / 6%);
+        border-radius: 5px;
+        overflow: hidden;
+        margin-bottom: 30px;
+
+        .pricing-header{
+            border-bottom: 1px solid #F7FAFD;
+            text-align: center;
+            height: 130px;
+            display: block;
+            position: relative;
+
+            .pricing-title{
+                font-weight: 700;
+                font-size: 16px;
+                letter-spacing: 1px;
+                color: #3B566E;
+                position: absolute;
+                width: 100%;
+                top: 46%;
+                transform: perspective(1px) translateY(0%);
+            }
+        }
+
+        .pricing-body{
+            margin-bottom: 40px;
+
+            .number{
+                width: 42px;
+                height: 42px;
+                line-height: 42px;
+                background: #F7FAFD;
+                position: relative;
+                margin: auto;
+                margin-top: -20px;
+                text-align: center;
+                -webkit-border-radius: 100%;
+                -moz-border-radius: 100%;
+                border-radius: 100%;
+
+                span{
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: #585CE9;
+                    display: block;
+                }
+            }
+
+            .price-wrapper{
+                text-align: center;
+                margin-top: 40px;
+                margin-bottom: 30px;
+
+                .currency{
+                    height: 47px;
+                    font-weight: 600;
+                    font-size: 20px;
+                    color: #585CE9;
+                    position: relative;
+                    top: -15px;
+                }
+
+                .price{
+                    font-weight: 700;
+                    font-size: 34px;
+                    color: #585CE9;
+                    letter-spacing: 2.12px;
+                }
+
+                .period{
+
+                    font-weight: 700;
+                    font-size: 14px;
+                    color: #585CE9;
+                    letter-spacing: 0.88px;
+                }
+            }
+
+            ul {
+                
+                li{
+                    cursor: pointer;
+                    text-align: center;
+                    margin-bottom: 12px;
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: #CCDCEA;
+                    letter-spacing: 0.88px;
+                    text-decoration: line-through;
+                }
+
+                .active{
+                    color: #3B566E;
+                    text-decoration: none;
+                }
+
+            }
+        }
+
+        .pricing-footer{
+            text-align: center;
+
+            a{
+                width: 160px;
+                margin: auto;
+                display: inline-block;
+                height: 44px;
+                line-height: 44px;
+                text-align: center;
+                border-radius: 5px;
+                background: #585CE9;
+                margin-bottom: 40px;
+                font-weight: 700;
+                font-size: 12px;
+                color: #fff;
+                letter-spacing: 0.75px;
+                text-transform: uppercase;
+                transition: background 1s ease-out;
+                outline: none !important;
+                cursor: pointer;
+                position: relative;
+                text-decoration: none;
+            }
+        }
+}
+
+    .active{
+    .pricing-header{
+
+        .pricing-title {
+            color: #fff;
+        }
+
+        &::before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0px;
+            right: 0px;
+            margin: auto;
+            background-image: linear-gradient(135deg, #585CE9 0%, #5C83E3 100%);
+        }
+    }
+
+    }
+
+    #popup-main{
+        border-radius: 10px;
+        width: 500px;
+        height: 300px;
+        top: 20%;
+        left: 80%;
+        position: absolute;
+        background-color: #585CE9;
+        opacity: 0.8;
+        z-index: 999999;
+        display: none;
+        
+
+        text-align: center;
+        h5, button{
+            margin-top: 100px;
+        }
+
+        h5{
+            color: #fff;
+        }
+
+        button{
+            width: 170px;
+            margin: auto;
+            display: inline-block;
+            height: 44px;
+            line-height: 44px;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            background: #585CE9;
+            font-weight: 700;
+            font-size: 25px;
+            color: #fff;
+            letter-spacing: 0.75px;
+            transition: all 0.3s;
+            outline: none;
+            
+        }
+
+    }
+
+    .active-choise{
+    width: 50px !important;
+    margin: auto;
+    display: inline-block;
+    height: 50px !important;
+    line-height: 44px !important;
+    text-align: center;
+    border-radius: 100% !important;
+    background: #20d220 !important;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 12px;
+    color: #fff;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    transition: background 1s ease-out;
+    outline: none !important;
+   
+   
+    }
+}

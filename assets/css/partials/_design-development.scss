@@ -1,0 +1,124 @@
+#design-development{
+    
+    padding: 50px 0;
+
+    .left{
+
+            img{
+                display: block;
+                margin: 50px auto;
+                width: 100%;
+            }
+        }
+   
+    h2{
+        font-weight: 400;
+        font-size: 28px;
+        color: #3B566E;
+        letter-spacing: 1.75px;
+        height: 45px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        position: relative;
+    }
+
+    p{
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-weight: 400;
+        font-size: 16px;
+        color: #6F8BA4;
+        line-height: 28px;
+        letter-spacing: 1px;
+    }
+
+
+    .btns{
+
+        .btn-home{
+            width: 100%;
+            margin: auto;
+            display: inline-block;
+            height: 40px;
+            line-height: 28px;
+            box-shadow: 0 2px 48px 0 rgb(0 0 0 / 8%);
+            border-radius: 5px;
+            background: #fff;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            position: relative;
+            overflow: hidden;
+            text-decoration: none;
+            color: #6F8BA4;
+
+
+            &::after{
+                
+                content: '';
+                position: absolute;
+                width: 100px;
+                left: -70px;
+                top: 0px;
+                transform: rotate(60deg);
+                transition: all 0.4s ease 0s;
+                height: 120px;
+                background: #585CE9;
+                opacity: 0;
+            
+            }
+
+            &:hover .firstspan{
+                margin-left: 30px !important;
+            }
+
+            &:hover::after{
+                opacity: 1;
+                width: 150px;
+            }
+
+            &:hover i{
+               color: #fff;
+            }
+
+            &:hover span{
+                margin-left: 40px;
+            }
+
+            span{
+                margin-left: 30px;
+                transition: all .3s;
+            }
+        }
+
+        i{
+            margin-left: 20px;
+            font-size: 10px;
+            position: relative;
+            z-index: 2;
+        }
+    }
+
+    .active{
+
+        margin-left: 25px;
+        margin-right: 37px;
+
+        i{
+            color: #fff !important;
+        }
+            
+        &::after{
+            
+            content: '';
+            position: absolute;
+            width: 150px !important;
+            left: -70px;
+            top: 0px;
+            transform: rotate(60deg);
+            transition: all 0.4s ease 0s;
+            height: 120px;
+            background: #585CE9;
+            opacity: 1 !important;
+        }
+    }
+}
