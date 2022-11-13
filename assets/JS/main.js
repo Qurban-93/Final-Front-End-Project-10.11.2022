@@ -65,6 +65,21 @@ export function counterPlus(){
         }, 25);
 }
 
+export function dropDown(btns){
+    btns.forEach(element => {
+        element.addEventListener("click",function(e){
+            e.preventDefault();
+            if(this.parentElement.nextElementSibling.style.display === "none"){
+                this.parentElement.nextElementSibling.style.display = "flex"
+            }
+            else{
+                this.parentElement.nextElementSibling.style.display = "none"
+            }
+        })
+        })
+}
+
+
 
 
 

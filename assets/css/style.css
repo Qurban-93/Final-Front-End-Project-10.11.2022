@@ -225,6 +225,11 @@
   border-radius: 10px;
   border: 1px solid #6F8BA4;
 }
+@media (min-width: 991px) {
+  #header .nav-mini {
+    display: none !important;
+  }
+}
 #header .nav-mini a {
   height: 50px !important;
   line-height: 50px !important;
@@ -239,14 +244,20 @@
   margin-top: 20px;
 }
 #header .nav-mini .submenu .drop-down-first {
-  display: flex;
   flex-direction: column;
   display: none;
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid #6F8BA4;
+  border-top: 1px solid #6F8BA4;
 }
 #header .nav-mini .submenu .drop-down-second {
-  display: flex;
   flex-direction: column;
   display: none;
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid #6F8BA4;
+  border-top: 1px solid #6F8BA4;
 }
 
 #loader {
@@ -1500,12 +1511,6 @@ footer .copyright {
   padding: 30px;
   padding-bottom: 10px;
 }
-@media (max-width: 992px) {
-  #bottom-image-second .about .about-text {
-    position: static;
-    width: 100%;
-  }
-}
 #bottom-image-second .about .about-text h2 {
   font-weight: 400;
   font-size: 24px;
@@ -2655,6 +2660,7 @@ footer .copyright {
   margin-bottom: 30px;
 }
 #big-photo-search-comment .comments h5 {
+  margin-left: 10px;
   margin-bottom: 30px;
   color: #6F8BA4;
 }
@@ -2664,17 +2670,20 @@ footer .copyright {
 #big-photo-search-comment .comments .main-content p {
   color: #6F8BA4;
   margin-top: 10px;
+  margin-left: 15px;
 }
 #big-photo-search-comment .comments .user-info {
   display: flex;
 }
 #big-photo-search-comment .comments .user-info .avatar {
   width: 10%;
+  margin-left: 10px;
 }
 #big-photo-search-comment .comments .user-info .commentby {
   position: relative;
   width: 88%;
   margin-bottom: 20px;
+  margin-left: 15px !important;
   margin-left: 5px;
 }
 #big-photo-search-comment .comments .user-info .commentby span {
@@ -2718,8 +2727,7 @@ footer .copyright {
 }
 #big-photo-search-comment .add-comment .main-content {
   display: flex;
-  margin-top: 20px;
-  margin-left: 10px;
+  padding: 15px;
 }
 #big-photo-search-comment .add-comment .user-name, #big-photo-search-comment .add-comment .user-mail {
   margin-bottom: 20px;

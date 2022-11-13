@@ -506,6 +506,7 @@
         margin-bottom: 30px;
 
         h5{
+            margin-left: 10px;
             margin-bottom: 30px;
             color: #6F8BA4;
 
@@ -515,10 +516,13 @@
         }
 
         .main-content{
+
             p{
                 color: #6F8BA4;
                 margin-top: 10px;
+                margin-left: 15px;
             }
+
         }
 
         .user-info{
@@ -527,6 +531,7 @@
 
             .avatar{
                 width: 10%;
+                margin-left: 10px;
             }
 
             .commentby{
@@ -534,6 +539,7 @@
                 position: relative;
                 width: 88%;
                 margin-bottom: 20px;
+                margin-left: 15px !important;
 
                 span{
                     margin: 10px 0;
@@ -589,8 +595,7 @@
         }
         .main-content{
             display: flex;
-            margin-top: 20px;
-            margin-left: 10px;
+            padding: 15px;
         }
 
         .user-name, .user-mail{

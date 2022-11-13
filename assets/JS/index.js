@@ -1,4 +1,4 @@
-import { preloader ,subMenu ,counterPlus} from "./main.js";
+import { preloader ,subMenu ,counterPlus , dropDown} from "./main.js";
 
 preloader();
 subMenu();
@@ -31,5 +31,7 @@ btns.forEach(element => {
 
 
 
+let btnsDropDown = document.querySelectorAll('.mini-dropdown');
 
+dropDown(btnsDropDown);
 

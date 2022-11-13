@@ -249,7 +249,10 @@
         border-radius: 10px;
         border:1px solid #6F8BA4;
 
-     
+        @media(min-width:991px)
+        {
+            display: none !important;
+        }
 
        
         a{
@@ -273,15 +276,23 @@
             }
 
             .drop-down-first{
-                display: flex;
+                
                 flex-direction: column;
                 display: none;
+                width: 100%;
+                height: 100%;
+                border-bottom: 1px solid #6F8BA4;
+                border-top:1px solid #6F8BA4 ;
             }
 
             .drop-down-second{
-                display: flex;
+                
                 flex-direction: column;
                 display: none;
+                width: 100%;
+                height: 100%;
+                border-bottom: 1px solid #6F8BA4;
+                border-top:1px solid #6F8BA4 ;
             }
         }
 
